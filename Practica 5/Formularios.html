@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios (Inputs)</h1>
+    <!--La etiqueta Form se utiliza para comenzar a agregar formularios-->
+    <form>
+        <!--Cuando ingresamos un texto en un formulario es con la etiqueta label e input-->
+        <!--Nombre-->
+        <label for="Nombre">Nombre</label>
+        <input type="text" required placeholder="Ingresa tu nombre" id="Nombre" minlength="5"/>
+        <br>
+        <br>
+        <!--Apellido-->
+        <Label for="Apellido">Apellido</Label>
+        <input type="text" required placeholder="Ingresa tu Apellido" id="Apellido" minlength="5"/>
+        <br>
+        <br>
+        <!--Email-->
+        <label for="Email">Email</label>
+        <input type="Email" required placeholder="Ingresa tu Correo" id="Email">
+        <br>
+        <br>
+        <!--Password-->
+        <label for="Password">Password</label>
+        <input type="Password" required id="Password" minlength="6" maxlength="10">
+        <br>
+        <br>
+        <!--Numeros-->
+        <label for="Num">Teléfono</label>
+        <input type="number" minlength="0" maxlength="10" id="Numero" placeholder="Ingresa tu número de télefono">
+        <br>
+        <br>
+        <!--Seleccionar Informacion-->
+        <h2>Selecciona una opcion</h2>
+        <input type="radio" id="hombre" checked value="Masculino">Masculino
+        <input type="radio" id="mujer" value="Femenino">Femenino
+        <br>
+        <br>
+        <h3>Selecciona los equipos que tengas</h3>
+        <input type="checkbox" id="1" value="Laptop" >Laptop
+        <br>
+        <input type="checkbox" id="2" value="celular">celular
+        <br>
+        <input type="checkbox" id="3" value="tableta">tableta
+        <br>
+        <input type="checkbox" id="4" value="PC">PC Escritorio
+        <br>
+        <br>
+        <label for="">Selecciona una opcion</label>
+        <br>
+        <!--Select se utiliza para seleccionar la informacion y option para ingresar los datos-->
+        <select id="País">
+            <option value="0">Seleccionar un País</option>
+            <option value="1">México</option>
+            <option value="2">EUA</option>
+            <option value="3">Francia</option>
+            <option value="4">Italia</option>
+            <option value="5">España</option>
+        </select>
+        <br>
+        <br>
+        <label for="Fecha">Selecciona una fecha</label>
+        <input type="date" min="2020-01-01" max="2020-12-31" value="2020-09-04">
+        <br>
+        <br>
+        <label for="Mes">Selecciona el mes</label>
+        <input type="Month" min="2020-01" max="2020-12" value="2020-09">
+        <br>
+        <br>
+        <label for="Año">Selecciona el año</label>
+        <input type="Year" min="2010" max="2020" value="2020">
+        <br>
+        <br>
+        <label for="color">Selecciona un color</label>
+        <input type="Color">
+        <br>
+        <br>
+        <label for="Volumen">Volumen</label>
+        <input type="Range">
+
+    </form>
+
+    
+</body>
+</html>
